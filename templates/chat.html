@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - R-3D</title>
+    <link rel="icon" type="image/x-icon" href="../static/assests/img/icon/icono.svg"/>
+    <meta name="keywords"  content="msj, mensajes, enviar mensaje, chat, privado">
+    <meta name="description" content="Chat privado.">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <nav class="nav__complet"> 
+        <ul>
+            <div class="nav__izq">
+                <li>
+                    <a href="../index.html">
+                        <img src="../static/assests/img/3.png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div class="nav__der">
+                <li id="desktop">
+                    <a href="login.html" class="nav" id="if-auth">LOGIN</a>
+                </li>
+                <li id="desktop">
+                    <a href="crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="posteos.html" class="nav">POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="msj.html" class="nav" id="not-auth">MENSAJES</a>
+                </li>
+                <li id="desktop">
+                    <a href="../index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                </li>
+                <li id="desktop">
+                    <a href="perfil.html" id="not-auth">
+                        <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+                    </a>
+                </li>
+                <div id="mobileVist" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><i class="button-menu"></i></button>
+                    <div class="dropdown-content">
+                        <li>
+                            <a href="login.html" class="nav" id="if-auth">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="perfil.html" id="not-auth">
+                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                        </li>
+                        <li>
+                            <a href="posteos.html" class="nav">POST</a>
+                        </li>
+                        <li>
+                            <a href="msj.html" class="nav" id="not-auth">Mensajes</a>
+                        </li>
+                        <li id="not-auth">
+                            <a href="creation_perfil.html">Editar Perfil</a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="mensaje">
+            <div class="class__sup chatUsername">
+                <div class="userChat">
+                    <a href="perfil.html">
+                        <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
+                        <h3>Zeke_tg</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="class__bandeja scroll">
+                <div class="userChatRight">
+                    <p>Esto es tan solo una prueba de como se vería tanto los chats, como la finalización de la búsqueda de una persona para el chat.
+                        Solo es demostrativo, por lo tanto, no se crearan mas templates para su demostración.
+                    </p>
+                    <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
+                </div>
+                <div class="userChatLeft">
+                    <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
+                    <p>Muy buenos modelos en 3D, y la calidad de las texturas en el render es hiperrealista, me podrías enseñar?</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form action="">
+                <div class="form-group input__chat">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="submit" class="btn btn-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="foot__complet">
+        <div class="foot__left">
+            <h3>CONTACTOS:</h3>
+            <p>Por cualquier duda o consulta, envíenos un mensaje</p>
+            <h4>Email: R-3D@gmail.com</h4>
+            <p>También puede llenar el formulario y nosotros
+                responderemos su consulta a la brevedad
+            </p>
+            <li>
+                <a href="contact.html">CENTRO DE AYUDA</a>
+            </li>
+        </div>
+        <div class="foot__right">
+            <a href="../index.html" class="logo_2">
+                <img src="../static/assests/img/3.png" alt="logo">
+            </a>
+            <li>
+                <a href="about.html">SOBRE NOSOTROS</a>
+            </li>
+        </div>
+    </footer>
+</body>
+
+<script src="../static/js/index.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posteos - R-3D</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../static/assests/img/icon/icono.svg"/>
+    <meta name="keywords"  content="post, publicacion, buscar post, filtrar post, buscar perfil">
+    <meta name="description" content="Todos tus proyectos y de la comunidad, en este lugar podras buscar y encontrar lo que busques, 
+    tanto publicaciones, como usuarios.">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <nav class="nav__complet"> 
+        <ul>
+            <div class="nav__izq">
+                <li>
+                    <a href="../index.html">
+                        <img src="../static/assests/img/3.png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div class="nav__der">
+                <li id="desktop">
+                    <a href="login.html" class="nav" id="if-auth">LOGIN</a>
+                </li>
+                <li id="desktop">
+                    <a href="crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="posteos.html" class="nav">POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="msj.html" class="nav" id="not-auth">MENSAJES</a>
+                </li>
+                <li id="desktop">
+                    <a href="../index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                </li>
+                <li id="desktop">
+                    <a href="perfil.html" id="not-auth">
+                        <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+                    </a>
+                </li>
+                <div id="mobileVist" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><i class="button-menu"></i></button>
+                    <div class="dropdown-content">
+                        <li>
+                            <a href="login.html" class="nav" id="if-auth">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="perfil.html" id="not-auth">
+                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                        </li>
+                        <li>
+                            <a href="posteos.html" class="nav">POST</a>
+                        </li>
+                        <li>
+                            <a href="msj.html" class="nav" id="not-auth">Mensajes</a>
+                        </li>
+                        <li id="not-auth">
+                            <a href="creation_perfil.html">Editar Perfil</a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <header class="form__pub">
+        <div class="filter__form">
+            <form action="">
+                <h4>FILTRAR POST:</h4>
+                <div class="form-group">
+                    <label for="formGroupExampleInput"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Post">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="filter__form">
+            <form action="">
+                <h4>BUSCAR PERFIL:</h4>
+                <div class="form-group">
+                    <label for="formGroupExampleInput"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    
+
+    <article class="container__art">
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>
+            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+        <div class="container__pub" data-aos="flip-right"> 
+            <div>
+                <a href="post.html">
+                    <img src="../static/assests/img/advanced_animation.96.png" class="img-fluid" alt="publicacion">
+                </a>            </div>
+            <div class="inf__art">
+                <h3>Mascara samurai</h3>
+                <P>
+                    Mascara samurai clásica con colmillos, tiene dos huecos en los laterales para alguna cinta o tira elástica,
+                     ya que estaba pensada para imprimirse, los colmillos son modulares para su impresión sin soportes, para los 
+                     detalles se utilizo el dorado y en el cuerpo un bordo para resaltar el énfasis de la sangre y los colores que
+                     utilizaban los samurai.
+                </P>
+            </div>
+        </div>
+    </article>
+
+
+
+    <footer class="foot__complet">
+        <div class="foot__left">
+            <h3>CONTACTOS:</h3>
+            <p>Por cualquier duda o consulta, envíenos un mensaje</p>
+            <h4>Email: R-3D@gmail.com</h4>
+            <p>También puede llenar el formulario y nosotros
+                responderemos su consulta a la brevedad
+            </p>
+            <li>
+                <a href="contact.html">CENTRO DE AYUDA</a>
+            </li>
+        </div>
+        <div class="foot__right">
+            <a href="../index.html" class="logo_2">
+                <img src="../static/assests/img/3.png" alt="logo">
+            </a>
+            <li>
+                <a href="about.html">SOBRE NOSOTROS</a>
+            </li>
+        </div>
+    </footer>
+</body>
+
+<script src="../static/js/index.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

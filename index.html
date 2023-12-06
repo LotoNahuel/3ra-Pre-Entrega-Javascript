@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-3D</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="static/assests/img/icon/icono.svg"/>
+    <meta name="keywords"  content="3D, RENDER, RENDERING, ANIMATION, REALISTIC">
+    <meta name="description" content="Tu sitio para compartir tus proyectos 3D. En R-3D encontraras los mejores modelos rederizados por parte de la comunidad, 
+    ademas podras compartir los tuyos, que te serviran como un porfolio compartiendo tu perfil.">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <nav class="nav__complet"> 
+        <ul>
+            <div class="nav__izq">
+                <li>
+                    <a href="index.html">
+                        <img src="static/assests/img/3.png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div class="nav__der">
+                <li id="desktop">
+                    <a href="templates/login.html" class="nav" id="if-auth">LOGIN</a>
+                </li>
+                <li id="desktop">
+                    <a href="templates/crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="templates/posteos.html" class="nav">POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="templates/msj.html" class="nav" id="not-auth">MENSAJES</a>
+                </li>
+                <li id="desktop">
+                    <a href="index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                </li>
+                <li id="desktop">
+                    <a href="templates/perfil.html" id="not-auth">
+                        <img src="static/assests/img/avatar/avatar-default.png" alt="avatar">
+                    </a>
+                </li>
+                <div id="mobileVist" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><i class="button-menu"></i></button>
+                    <div class="dropdown-content">
+                        <li>
+                            <a href="templates/login.html" class="nav" id="if-auth">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="templates/perfil.html" id="not-auth">
+                                <img src="static/assests/img/avatar/avatar-default.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="templates/crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                        </li>
+                        <li>
+                            <a href="templates/posteos.html" class="nav">POST</a>
+                        </li>
+                        <li>
+                            <a href="templates/msj.html" class="nav" id="not-auth">Mensajes</a>
+                        </li>
+                        <li>
+                            <a href="templates/creation_perfil.html" id="not-auth">Editar Perfil</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    
+    <article class="art__complet" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+        <div id="login-auth">
+
+        </div>
+        <h1>BIENVENIDO A R-3D</h1>
+        <p>
+            La mejor pagina para subir y encontrar los mejores rendering.
+        </p>
+        <h2>
+            Únase a nosotros.
+        </h2>
+        <p>
+            En todo el mundo, los fans del rendering están creando conceptos, 
+            arte e inventos del mundo real. Haga crecer su red e inspírese con mentes magníficas.
+        </p>
+        <li>
+            <a href="templates/creation_perfil.html" id="if-auth">
+                <button type="submit" class="btn btn-info">REGISTRARSE</button>
+            </a>
+        </li>
+        <video src="static/assests/video/video.webm" autoplay="true" muted="true" loop="true" preload="auto"></video>
+    </article>
+
+    <section class="showcase class__section">
+        <div class="container-fluid p-0">
+            <div class="row g-0" data-aos="fade-up" data-aos-duration="3000">
+                <img class="col-lg-6 order-lg-2 text-white showcase-img" src="static/assests/img/Anotación 2023-05-04 213458.jpg"></img>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text class__txt">
+                    <h2>Tu lugar para compartir</h2>
+                    <p class="lead mb-0">Somos la primera pagina donde nos centramos en el renderizado, podrás subir y encontrar todo tipo de Modelos 3D renderizados. Hasta podrás recibir encargos por privado por parte de la comunidad.</p>
+                </div>
+            </div>
+            <div class="row g-0" data-aos="fade-up" data-aos-duration="3000">
+                <img class="col-lg-6 text-white showcase-img" src="static/assests/img/advanced_animation.96.png"></img>
+                <div class="col-lg-6 my-auto showcase-text class__txt">
+                    <h2>Proyectos y Porfolio</h2>
+                    <p class="lead mb-0">Podrás subir tus proyectos de la Universidad, ademas compartiendo tu perfil podrán visualizar tus proyectos o trabajos que te servirá como porfolio.</p>
+                </div>
+            </div>
+            <div class="row g-0" data-aos="fade-up" data-aos-duration="3000">
+                <iframe
+                        width="900"
+                        height="500"
+                        src="https://www.youtube.com/embed/MJ7VSe7hs6Y"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        class="col-lg-6 order-lg-2 text-white showcase-img">
+                </iframe>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text class__txt">
+                    <h2>¿Y los Modelados 3D y las Animaciones?</h2>
+                    <p class="lead mb-0">En poco tiempo agregaremos un método para subir y visualizar los Modelos en 3D y las Animaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot__complet">
+        <div class="foot__left">
+            <h3>CONTACTOS:</h3>
+            <p>Por cualquier duda o consulta, envíenos un mensaje</p>
+            <h4>Email: R-3D@gmail.com</h4>
+            <p>También puede llenar el formulario y nosotros
+                responderemos su consulta a la brevedad
+            </p>
+            <li>
+                <a href="templates/contact.html">CENTRO DE AYUDA</a>
+            </li>
+        </div>
+        <div class="foot__right">
+            <a href="index.html" class="logo_2">
+                <img src="static/assests/img/3.png" alt="logo">
+            </a>
+            <li>
+                <a href="templates/about.html">SOBRE NOSOTROS</a>
+            </li>
+        </div>
+    </footer>
+</body>
+
+<script src="static/js/index.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

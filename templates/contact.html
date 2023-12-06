@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - R-3D</title>
+    <link rel="icon" type="image/x-icon" href="../static/assests/img/icon/icono.svg"/>
+    <meta name="keywords"  content="AYUDA, HELP, CENTRO DE ATENCION, CENTRO DE AYUDA, CONTACTO">
+    <meta name="description" content="Por cualquier duda o consulta puede mandarnos dejarnos su consulta con sus datos y en la brevedad nos
+    comunicaremos con usted.">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <nav class="nav__complet"> 
+        <ul>
+            <div class="nav__izq">
+                <li>
+                    <a href="../index.html">
+                        <img src="../static/assests/img/3.png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div class="nav__der">
+                <li id="desktop">
+                    <a href="login.html" class="nav" id="if-auth">LOGIN</a>
+                </li>
+                <li id="desktop">
+                    <a href="crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="posteos.html" class="nav">POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="msj.html" class="nav" id="not-auth">MENSAJES</a>
+                </li>
+                <li id="desktop">
+                    <a href="../index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                </li>
+                <li id="desktop">
+                    <a href="perfil.html" id="not-auth">
+                        <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+                    </a>
+                </li>
+                <div id="mobileVist" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><i class="button-menu"></i></button>
+                    <div class="dropdown-content">
+                        <li>
+                            <a href="login.html" class="nav" id="if-auth">LOGIN</a>
+                        </li>
+                        <li>
+                            <a href="perfil.html" id="not-auth">
+                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="crear_post.html" class="nav" id="not-auth">CREAR POST</a>
+                        </li>
+                        <li>
+                            <a href="posteos.html" class="nav">POST</a>
+                        </li>
+                        <li>
+                            <a href="msj.html" class="nav" id="not-auth">Mensajes</a>
+                        </li>
+                        <li id="not-auth">
+                            <a href="creation_perfil.html">Editar Perfil</a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="logout" id="not-auth">CERRAR SESION</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="form__editPerfilAndContact" class="helpContact">
+            <h2>
+                CENTRO DE ATENCION
+            </h2>
+            <p>
+                Para comunicarnos con usted, complete el siguiente formulario y nos comunicaremos a 
+                la brevedad para responder cualquier duda / consulta y/o problema que le surja.
+            </p>
+            <h3>
+                FORMULARIO:
+            </h3>
+            <form action="">
+                <div class="form-group data__inf">
+                    <h4>Nombre de usuario:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Email:</h4>
+                    <label for="exampleFormControlInput1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="name@example.com"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Nro. telefono:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Descripcion:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <div class="classBtn">
+                    <button type="submit" class="btn btn-info">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="foot__complet">
+        <div class="foot__left">
+            <h3>CONTACTOS:</h3>
+            <p>Por cualquier duda o consulta, envíenos un mensaje</p>
+            <h4>Email: R-3D@gmail.com</h4>
+            <p>También puede llenar el formulario y nosotros
+                responderemos su consulta a la brevedad
+            </p>
+            <li>
+                <a href="contact.html">CENTRO DE AYUDA</a>
+            </li>
+        </div>
+        <div class="foot__right">
+            <a href="../index.html" class="logo_2">
+                <img src="../static/assests/img/3.png" alt="logo">
+            </a>
+            <li>
+                <a href="about.html">SOBRE NOSOTROS</a>
+            </li>
+        </div>
+    </footer>
+</body>
+
+<script src="../static/js/index.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+
+</html>
