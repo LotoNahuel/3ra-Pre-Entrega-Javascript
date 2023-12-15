@@ -79,35 +79,26 @@
                 <div class="userChat">
                     <a href="perfil.html">
                         <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
-                        <h3>Zeke_tg</h3>
+                        <h3 id="username_search"></h3>
                     </a>
                 </div>
             </div>
-            <div class="class__bandeja scroll">
-                <div class="userChatRight">
-                    <p>Esto es tan solo una prueba de como se vería tanto los chats, como la finalización de la búsqueda de una persona para el chat.
-                        Solo es demostrativo, por lo tanto, no se crearan mas templates para su demostración.
-                    </p>
-                    <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
-                </div>
-                <div class="userChatLeft">
-                    <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
-                    <p>Muy buenos modelos en 3D, y la calidad de las texturas en el render es hiperrealista, me podrías enseñar?</p>
-                </div>
+            <div class="class__bandeja scroll" id="for_msj">
+                
             </div>
         </section>
         <section>
-            <form action="">
+            <div>
                 <div class="form-group input__chat">
                     <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <button type="submit" class="btn btn-info">
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    <button class="btn btn-info" id="send">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-send" viewBox="0 0 16 16">
                             <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
                         </svg>
                     </button>
                 </div>
-            </form>
+            </div>
         </section>
     </main>
     
@@ -134,6 +125,7 @@
     </footer>
 </body>
 
+<script src="../static/js/chat_user.js"></script>
 <script src="../static/js/index.js"></script>
 <script src="../static/js/bootstrap.js"></script>
 

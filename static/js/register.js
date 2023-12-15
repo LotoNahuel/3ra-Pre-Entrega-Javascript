@@ -40,8 +40,8 @@ function registrar(){
     buttonsave.addEventListener("click",(e)=>{
         const newRegister = new database(register.nameAndSurname, register.username, register.email, register.password, register.phone, register.birthdate, register.studies, register.description);
         registro.push(newRegister);
-        const ifCreate = document.querySelector("#create-perfil");
-            ifCreate.innerHTML = `<alert style="color:white;background-color:green;font-size:18px;display:flex;alaing-items:center;justify-content:center;border-radius:15px;margin:15px;">GUARDADO</alert>`
+        const registrar_datos = JSON.stringify(registro)
+        localStorage.setItem("usuario", registrar_datos)
     })
 }
 

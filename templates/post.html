@@ -106,128 +106,18 @@
                             COMENTARIOS
                         </h3>
                     </div>
-                    <div class="scroll-container coment_style">
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                MoraV
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                Que buen manejo de las texturas, y los colores.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                Zeke_tg
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                Me encanta la iluminación, esos pequeños detalles lo hacen hiperreal.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                Papa-Francisco
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                El modelo 3D de la masca esta buenísimo, aunque en mi preferencia le habría 
-                                puesto el color negro en ves del rojo.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                Mayinka
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                Me encanta la mascara, pasame por privado el modelo 3D que lo quiero imprimir.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                HUX
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                El toque dorado en los colmillos le queda muy bueno, ademas tiene una textura rugosa, 
-                                que esta genial.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                Duke
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                Estaría genial con unos detalles de desgaste y algunas partes con roturas, 
-                                los dientes un poco manchados, quedaría épico.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                Archoon_12
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                Muy buen render, pero debes cambiar el fondo, poner algún fondo... como una 
-                                mesa o como en unos comentarios arriba que se muestre desgastada y en el suelo 
-                                con barro, mas detalles y seria un buen fondo de pantalla.
-                            </p>
-                        </div>
-                        <div class="avatar_user">
-                            <a href="perfil.html">
-                                <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
-                            </a>
-                            <h3>
-                                Kaisa
-                            </h3>
-                        </div>
-                        <div>
-                            <p>
-                                Como dice Archoon_12, lo pondría en el suelo en medio del barro, con un poco de sangre, 
-                                y el cuerpo del que la uso atrás de el con la mano encima, y con los detalles rotos en la 
-                                mascara y desgastada quedaría épica.
-                            </p>
-                        </div>
+                    <div class="scroll-container coment_style" id="for_coment">
+                        
                     </div>
                 </div>
                 <div>
                     <form class="class__form">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1"></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agregar comentario..."></textarea>
+                            <textarea class="form-control" name="textarea" rows="3" placeholder="Agregar comentario..."></textarea>
                         </div>
-                        </div>
-                            <button type="submit" class="btn btn-info">COMENTAR</button>
+                        <div class="classBtn">
+                            <button class="btn btn-info" id="save">COMENTAR</button>
                         </div>
                     </form>
                 </div>
@@ -257,6 +147,7 @@
     </footer>
 </body>
 
+<script src="../static/js/coment-post.js"></script>
 <script src="../static/js/index.js"></script>
 <script src="../static/js/bootstrap.js"></script>
 

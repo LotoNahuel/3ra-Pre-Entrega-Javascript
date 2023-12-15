@@ -764,7 +764,7 @@ ul {
 .searchPerfilMsj {
   margin-block-end: 30px;
 }
-.searchPerfilMsj form {
+.form_chat {
   display: flex;
   align-items: center;
   justify-content: center;

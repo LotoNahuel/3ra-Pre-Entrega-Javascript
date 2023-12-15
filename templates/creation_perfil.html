@@ -75,64 +75,65 @@
 
     <main>
         <section id="form__editPerfilAndContact">
-            <div class="class__header">
-                <h3>Foto del perfil</h3>
-                <div class="class__head">
-                    <a href="../static/assests/img/avatar/avatar-default.png">
-                        <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
+            <div>
+                <div class="class__header">
+                    <h3>Foto del perfil</h3>
+                    <div class="class__head">
+                        <a href="../static/assests/img/avatar/avatar-default.png">
+                            <img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar">
+                        </a>
+                        <label for="formFileLg" class="form-label"></label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                    </div>
+                </div>
+                <div class="class__data">
+                    <h3>Datos personales</h3>
+                    <div class="form-group data__inf">
+                        <h4>Nombre y apellido:</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" name="nameAndSurname" rows="1"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Nombre de usuario:</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" name="username" rows="1"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Email:</h4>
+                        <label for="exampleFormControlInput1"></label>
+                        <textarea class="form-control" name="email" rows="1" placeholder="name@example.com"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Contraseña:</h4>
+                        <label for="exampleFormControlInput1"></label>
+                        <textarea class="form-control" name="password" rows="1" placeholder="*********"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Nro. telefono:</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" name="phone" rows="1"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Fecha de nacimiento:</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" name="birthdate" rows="1"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Estudios:</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" name="studies" rows="2"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>Descripcion:</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" name="description" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="classBtn">
+                    <a href="login.html">
+                        <button class="btn btn-info" id="save">GUARDAR</button>
                     </a>
-                    <label for="formFileLg" class="form-label"></label>
-                    <input class="form-control form-control-lg" id="formFileLg" type="file">
                 </div>
-            </div>
-            <div class="class__data">
-                <h3>Datos personales</h3>
-                <div class="form-group data__inf">
-                    <h4>Nombre y apellido:</h4>
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" name="nameAndSurname" rows="1"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Nombre de usuario:</h4>
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" name="username" rows="1"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Email:</h4>
-                    <label for="exampleFormControlInput1"></label>
-                    <textarea class="form-control" name="email" rows="1" placeholder="name@example.com"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Contraseña:</h4>
-                    <label for="exampleFormControlInput1"></label>
-                    <textarea class="form-control" name="password" rows="1" placeholder="*********"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Nro. telefono:</h4>
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" name="phone" rows="1"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Fecha de nacimiento:</h4>
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" name="birthdate" rows="1"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Estudios:</h4>
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" name="studies" rows="2"></textarea>
-                </div>
-                <div class="form-group data__inf">
-                    <h4>Descripcion:</h4>
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" name="description" rows="5"></textarea>
-                </div>
-            </div>
-            <div class="classBtn">
-                <button class="btn btn-info" id="save">GUARDAR</button>
-            </div>
-            <div id="create-perfil">
-
             </div>
         </section>
     </main>
