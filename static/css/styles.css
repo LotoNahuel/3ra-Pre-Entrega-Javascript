@@ -1132,5 +1132,9 @@ ul {
 #post{
   display: flex;
 }
+#photo img{
+  width: 900px;
+  height: 450px;
+}
 
 /*# sourceMappingURL=styles.css.map */
