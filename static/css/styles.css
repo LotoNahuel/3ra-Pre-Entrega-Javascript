@@ -1115,4 +1115,22 @@ ul {
   }
 }
 
+#photo {
+  display: flex;
+  justify-content: center;
+}
+#photo img{
+  width: 500px;
+  height: 250px;
+}
+
+#posteos img{
+  width: 600px;
+  height: 300px;
+}
+
+#post{
+  display: flex;
+}
+
 /*# sourceMappingURL=styles.css.map */

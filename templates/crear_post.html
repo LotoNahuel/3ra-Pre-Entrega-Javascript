@@ -75,13 +75,13 @@
 
     <main>
         <section id="form__editPerfilAndContact">
-            <form>
+            <div>
                 <div class="class__header">
                     <h3>ARCHIVO:</h3>
                     <div class="classImgCreationPost class__head">
                         <img src="../static/assests/img/default-image.png" class="img-fluid" alt="default-image">
                         <label for="formFileLg" class="form-label"></label>
-                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                        <input class="form-control form-control-lg" id="textarea" name="id_photo" type="file">
                     </div>
                 </div>
                 <div class="class__data">
@@ -89,18 +89,18 @@
                     <div class="form-group data__inf">
                         <h4>TITULO</h4>
                         <label for="exampleFormControlTextarea1"></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                        <textarea class="form-control" id="textarea" name="name_post" rows="1"></textarea>
                     </div>
                     <div class="form-group data__inf">
                         <h4>DESCRIPCION</h4>
                         <label for="exampleFormControlTextarea1"></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea class="form-control" id="textarea" name="description" rows="5"></textarea>
                     </div>
                 </div>
                 <div class="classBtn">
-                    <button type="submit" class="btn btn-info">GUARDAR</button>
+                    <button type="submit" id="button_post" class="btn btn-info">GUARDAR</button>
                 </div>
-              </form>
+            </div>
         </section>
     </main>
 
@@ -127,6 +127,8 @@
     </footer>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../static/js/create_post.js"></script>
 <script src="../static/js/index.js"></script>
 <script src="../static/js/bootstrap.js"></script>
 

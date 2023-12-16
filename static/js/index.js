@@ -62,9 +62,15 @@ botonLog?.addEventListener("click",(e)=>{
     if(user_find){
         const stringify = JSON.stringify({ usuario: user_find.username })
         localStorage.setItem("user", stringify)
+        window.location.href = "../index.html"
     }
     else{
         const is_false = document.querySelector("#log-not-auth");
-        is_false.innerHTML = `<alert style="color:white;background-color:red;font-size:18px;display:flex;align-items:center;justify-content:center;border-radius:15px;margin:15px;">Usuario y/o contraseña incorrecto</alert>`
+        is_false.innerHTML = Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Datos incorrectos",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
     }
 })

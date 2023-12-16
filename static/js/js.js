@@ -25,3 +25,13 @@ if (keyComentarios.length > 0) {
 }
 
 
+if (key_posteos.length > 0) {
+    for (let i = 0; i < key_posteos.length; i++) {
+        const post_find = key_posteos[i];
+        if(buscar_o.buscar_post === post_find[0].name_post){
+            
+            
+        }
+        
+    }
+}

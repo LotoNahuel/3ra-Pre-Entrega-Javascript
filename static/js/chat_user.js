@@ -13,7 +13,6 @@ const msj_input = {
 
 mensajes.addEventListener("input",(e) => {
     msj_input.mensaje = e.target.value
-    console.log(e.target.value)
 })
 
 function guardar_mensaje(){
@@ -23,11 +22,22 @@ function guardar_mensaje(){
             i++;
         }
         localStorage.setItem(`mensajes - ${i}`, msj_txt)
+    window.location.href = "chat.html"
+}
+
+function alerta(){
+    const alert = document.querySelector("#alert")
+    alert.innerHTML = Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Completa el campo",
+        footer: '<a href="#">Why do I have this issue?</a>'
+      });
 }
 send_msj.addEventListener("click",(e)=>{
-    msj_input.mensaje ? guardar_mensaje() : alert("COMPLETAR CASILLAS")
-    window.location.href = "chat.html"
+    msj_input.mensaje ? guardar_mensaje() : alerta()
 })
+
 
 const key_mensaje = [];
 for (let i = 0; i < localStorage.length; i++) {
@@ -37,6 +47,7 @@ for (let i = 0; i < localStorage.length; i++) {
     }
 }
 let msj_append = "";
+
 
 if (key_mensaje.length > 0) {
     for (let i = 0; i < key_mensaje.length; i++) {

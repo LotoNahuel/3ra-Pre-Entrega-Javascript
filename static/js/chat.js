@@ -17,6 +17,15 @@ function guardar_user(){
     localStorage.setItem("search_user", dato_user)
     window.location.href = "chat.html"
 }
+function alerta(){
+    const alert = document.querySelector("#alert")
+    alert.innerHTML = Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Completa el campo",
+        footer: '<a href="#">Why do I have this issue?</a>'
+      });
+}
 button_search?.addEventListener("click",(e)=>{
-    user_chat.usuario ? guardar_user() : alert("complete el campo")
+    user_chat.usuario ? guardar_user() : alerta()
 })
