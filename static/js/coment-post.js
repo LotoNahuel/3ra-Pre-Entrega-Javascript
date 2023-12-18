@@ -46,18 +46,17 @@ let coment_append = "";
 
 if (keyComentarios.length > 0) {
     for (let i = 0; i < keyComentarios.length; i++) {
-        const comentario = keyComentarios[i];
         coment_append += `<div class="avatar_user" id="avatar_usuario">
             <a href="perfil.html">
                 <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
             </a>
             <h3>
-                ${comentario[0].usuario}
+                ${keyComentarios[i].usuario}
             </h3>
             </div>
             <div>
                 <p>
-                ${comentario[0].coment}
+                ${keyComentarios[i].coment}
                 </p>
             </div>`;
     }

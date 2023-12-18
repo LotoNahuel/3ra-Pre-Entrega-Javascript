@@ -35,3 +35,22 @@ if (key_posteos.length > 0) {
         
     }
 }
+
+<li>
+<a href="chat.html">
+    <img src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+    <div class="user__txt">
+        <h4>CobbyS_S</h4>
+        <p>
+            Buenas, me encantan tus render, quería hacerte un encargo de una animación.
+        </p>
+    </div>
+</a>
+</li>
+
+let msj_append = "";
+
+
+    button_search?.addEventListener("click",(e)=>{
+        user_chat.usuario ? guardar_user() : alerta()
+    })
