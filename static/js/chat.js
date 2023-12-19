@@ -16,24 +16,29 @@ for (let i = 0; i < localStorage.length; i++) {
 
 let msj_append = ""
 for (let i = 0; i < key_msj.length; i++) {
-    msj_append += `<li>
-        <a id="name_import" name="${key_msj[i].remitente === user.usuario ? key_msj[i].destinatario : key_msj[i].remitente}">
-            <img  src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
+    if(key_msj[i].destinatario === user.usuario || key_msj[i].remitente === user.usuario){
+        msj_append += `<li>
+        <a id="name_import" name=${key_msj[i].remitente === user.usuario ? key_msj[i].destinatario : key_msj[i].remitente}>
+            <img id="name_import" name=${key_msj[i].remitente === user.usuario ? key_msj[i].destinatario : key_msj[i].remitente} src="../static/assests/img/avatar/avatar-default.png" alt="avatar">
             <div class="user__txt">
-                <h4>${key_msj[i].remitente === user.usuario ? key_msj[i].destinatario : key_msj[i].remitente}"</h4>
+                <h4>
+                    ${key_msj[i].remitente === user.usuario ? key_msj[i].destinatario : key_msj[i].remitente}
+                </h4>
                 <p>
                     ${key_msj[i].message}
                 </p>
             </div>
         </a>
         </li>`;
+    }
+    
 }
 msj.innerHTML = msj_append;
 
 msj.addEventListener("click", function(event){
     const userChat = event.target.getAttribute("name");
     const save = JSON.stringify({name: userChat})
-    localStorage.setItem("save_nameUser", save)
+    localStorage.setItem("search_user", save)
     window.location.href = "chat.html"
 });
 
@@ -45,7 +50,7 @@ search_user?.addEventListener("input",(e) => {
 })
 
 function guardar_user(){
-    const dato_user = JSON.stringify({usuario: user_chat.usuario})
+    const dato_user = JSON.stringify({name: user_chat.usuario})
     localStorage.setItem("search_user", dato_user)
     window.location.href = "chat.html"
 }

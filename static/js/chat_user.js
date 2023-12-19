@@ -4,9 +4,8 @@ const chat_user = document.getElementById("username_search")
 const mensajes = document.getElementById("textarea")
 const send_msj = document.getElementById("send")
 const for_msj = document.getElementById("for_msj")
-const import_name = document.getElementById("save_nameUser")
 
-chat_user.innerHTML = `${destinatario.usuario === remitente.usuario ? import_name.name : destinatario.usuario}`
+chat_user.innerHTML = `<h3>${destinatario.name}</h3>`
 
 const msj_input = {
     mensaje: ""
@@ -17,7 +16,7 @@ mensajes.addEventListener("input",(e) => {
 })
 
 function guardar_mensaje(){
-    const msj_txt = JSON.stringify({message: msj_input.mensaje, destinatario: destinatario.usuario, remitente: remitente.usuario})
+    const msj_txt = JSON.stringify({message: msj_input.mensaje, destinatario: destinatario.name, remitente: remitente.usuario})
     let i = 0;
         while (i < localStorage.length){
             i++;
@@ -52,10 +51,12 @@ let msj_append = "";
 
 if (key_mensaje.length > 0) {
     for (let i = 0; i < key_mensaje.length; i++) {
-        if (key_mensaje[i].destinatario === import_name.name || key_mensaje[i].destinatario === destinatario.usuario){
+        if (key_mensaje[i].destinatario === destinatario.name || key_mensaje[i].remitente === destinatario.name){
             const right = `<div class="userChatRight"><p>${key_mensaje[i].message}</p><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"></div>`;
-            const left = `<div class="userChatLeft"><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"><p>${key_mensaje[i].message}</p></div>`;
-            msj_append += `${key_mensaje[i].remitente == remitente.usuario ? right : left}`;
+            if(key_mensaje[i].remitente === remitente.usuario || key_mensaje[i].destinatario === remitente.usuario){
+                const left = `<div class="userChatLeft"><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"><p>${key_mensaje[i].message}</p></div>`;
+                msj_append += `${key_mensaje[i].remitente == remitente.usuario ? right : left}`;
+            }  
         }
     }
     for_msj.innerHTML = msj_append;

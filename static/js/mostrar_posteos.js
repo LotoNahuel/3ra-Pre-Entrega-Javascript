@@ -64,28 +64,29 @@ function buscar_1(){
     localStorage.setItem("buscar_post", buscar_publicacion)
     const buscar_o = JSON.parse(localStorage.getItem("buscar_post"))
     if (key_posteos.length > 0) {
-        const key = key_posteos.filter(post => post[0].name_post === buscar_o.buscar_post);
-        if (key[0][0].name_post === buscar_o.buscar_post){
-            mostrar_post.style.display = "none"
-            mostrar_post.style.display = "flex"
-            mostrar_post.style.justifyContent = "center"
-            mostrar_post.style.width = "max-content"
-            mostrar_post.innerHTML = `<div  class="container__pub" data-aos="flip-right"> 
-                <div>
-                    <a href="post.html">
-                        <img src="${key[0][0].photo}" class="img-fluid" alt="publicacion">
-                    </a>
-                </div>
-                <div class="inf__art">
-                    <h3>
-                        ${key[0][0].name_post}
-                    </h3>
-                    <P>
-                        ${key[0][0].description}
-                    </P>
-                </div>
-                </div>`;
-        }
+        key_posteos.forEach((el)=>{
+            if (el[0].name_post === buscar_o.buscar_post){
+                mostrar_post.style.display = "none"
+                mostrar_post.style.display = "flex"
+                mostrar_post.style.justifyContent = "center"
+                mostrar_post.style.width = "max-content"
+                mostrar_post.innerHTML = `<div  class="container__pub" data-aos="flip-right"> 
+                    <div>
+                        <a href="post.html">
+                            <img src="${el[0].photo}" class="img-fluid" alt="publicacion">
+                        </a>
+                    </div>
+                    <div class="inf__art">
+                        <h3>
+                            ${el[0].name_post}
+                        </h3>
+                        <P>
+                            ${el[0].description}
+                        </P>
+                    </div>
+                    </div>`;
+            }
+        })
     }
 }
 function buscar_2(){
