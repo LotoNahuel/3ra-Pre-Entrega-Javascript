@@ -20,9 +20,8 @@ let post_append = "";
 
 if (posteos.length > 0) {
     for (let i = 0; i < posteos.length; i++){
-
         const publicacion = posteos[i];
-        if (find_user.usuario === publicacion[0].usuario){
+        if (publicacion[0].usuario === find_user.usuario){
             post_append += `<div  class="container__pub" data-aos="flip-right"> 
             <div>
                 <a href="post.html">
@@ -39,6 +38,7 @@ if (posteos.length > 0) {
         }
     }
     for_post.innerHTML = post_append;
-} else {
+}
+else {
     for_post.innerHTML = "<h3>No hay Posteos</h3>";
 }
