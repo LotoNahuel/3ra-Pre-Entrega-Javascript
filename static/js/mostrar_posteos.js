@@ -86,6 +86,12 @@ function buscar_1(){
                     </div>
                     </div>`;
             }
+            else{
+                mostrar_post.style.display = "none"
+                mostrar_post.style.display = "flex"
+                mostrar_post.style.justifyContent = "center"
+                mostrar_post.innerHTML = "<h3>No hay posteos</h3>"
+            }
         })
     }
 }

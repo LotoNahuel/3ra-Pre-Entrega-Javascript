@@ -32,8 +32,17 @@ function guardar_comentario(){
     }
     localStorage.setItem(`comentario - ${i}`, stringify)
 }
+function alerta(){
+    const alert = document.querySelector("#alert")
+    alert.innerHTML = Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Completa el campo",
+        footer: '<a href="#">Why do I have this issue?</a>'
+      });
+}
 buttonsave.addEventListener("click",(e)=>{
-    save_coment.comentario ? guardar_comentario() : alert("completa el campo")
+    save_coment.comentario ? guardar_comentario() : alerta()
 })
 
 const for_coment = document.getElementById("for_coment")

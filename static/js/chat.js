@@ -13,7 +13,6 @@ for (let i = 0; i < localStorage.length; i++) {
     }
 }
 
-
 let msj_append = ""
 for (let i = 0; i < key_msj.length; i++) {
     if(key_msj[i].destinatario === user.usuario || key_msj[i].remitente === user.usuario){
