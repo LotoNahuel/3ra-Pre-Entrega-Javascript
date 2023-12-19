@@ -4,9 +4,9 @@ const chat_user = document.getElementById("username_search")
 const mensajes = document.getElementById("textarea")
 const send_msj = document.getElementById("send")
 const for_msj = document.getElementById("for_msj")
-const import_name = document.getElementById("save_name")
+const import_name = document.getElementById("save_nameUser")
 
-chat_user.innerHTML = `${destinatario.usuario}`
+chat_user.innerHTML = `${destinatario.usuario === remitente.usuario ? import_name.name : destinatario.usuario}`
 
 const msj_input = {
     mensaje: ""
@@ -52,9 +52,11 @@ let msj_append = "";
 
 if (key_mensaje.length > 0) {
     for (let i = 0; i < key_mensaje.length; i++) {
-        const right = `<div class="userChatRight"><p>${key_mensaje[i].message}</p><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"></div>`;
-        const left = `<div class="userChatLeft"><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"><p>${key_mensaje[i].message}</p></div>`;
-        msj_append += `${key_mensaje[i].remitente == remitente.usuario ? right : left}`;
+        if (key_mensaje[i].destinatario === import_name.name || key_mensaje[i].destinatario === destinatario.usuario){
+            const right = `<div class="userChatRight"><p>${key_mensaje[i].message}</p><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"></div>`;
+            const left = `<div class="userChatLeft"><img src="../static/assests/img/avatar/avatar-default.png" class="img-fluid" alt="avatar"><p>${key_mensaje[i].message}</p></div>`;
+            msj_append += `${key_mensaje[i].remitente == remitente.usuario ? right : left}`;
+        }
     }
     for_msj.innerHTML = msj_append;
 }
